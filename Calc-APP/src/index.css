@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .bg-th1-main {
+    --tw-bg-opacity: 1;
+    background-color: hsla(222, 26%, 31%, var(--tw-bg-opacity));
+  }
+  .bg-th1-toggle {
+    --tw-bg-opacity: 1;
+    background-color: hsla(223, 31%, 20%, var(--tw-bg-opacity));
+  }
+  .bg-th1-screen {
+    --tw-bg-opacity: 1;
+    background-color: hsla(224, 36%, 15%, var(--tw-bg-opacity));
+  }
+  /* buttons */
+  .bg-th1-button {
+    --tw-bg-opacity: 1;
+    background-color: hsla(32, 26%, 89%, var(--tw-bg-opacity));
+  }
+  .border-th1-button {
+    --tw-bg-opacity: 1;
+    border-color: hsla(24, 17%, 65%, var(--tw-bg-opacity));
+  }
+  /* buttons hover*/
+  .bg-th1-button-hover:hover {
+    --tw-bg-opacity: 1;
+    background-color: hsla(0, 0%, 100%, var(--tw-bg-opacity));
+  }
+  
+  .border-th1-button-hover:hover {
+    --tw-bg-opacity: 1;
+    border-color: hsla(30, 14%, 62%, var(--tw-bg-opacity));
+  }
+
+  .bg-th2-main {
+    --tw-bg-opacity: 1;
+    background-color: hsla(0, 0%, 90%, var(--tw-bg-opacity));
+  }
+  .bg-th2-toggle {
+    --tw-bg-opacity: 1;
+    background-color: hsla(0, 5%, 81%, var(--tw-bg-opacity));
+  }
+  .bg-th2-screen {
+    --tw-bg-opacity: 1;
+    background-color: hsla(0, 0%, 93%, var(--tw-bg-opacity));
+  }
+
+  .bg-th3-main {
+    --tw-bg-opacity: 1;
+    background-color: hsla(268, 75%, 9%, var(--tw-bg-opacity));
+  }
+  .bg-th3-toggle-keypad-screen {
+    --tw-bg-opacity: 1;
+    background-color: hsla(268, 71%, 12%, var(--tw-bg-opacity));
+  }
+}
