@@ -1,10 +1,11 @@
 import { useState } from "react";
 
-export const Theme = () => {
+export const Theme = (props) => {
   const [activeButton, setActiveButton] = useState(1)
- // const activeButton = 2; // Set the active button ID here
+  
  const handleButtonClick = (buttonId) => {
   setActiveButton(buttonId)
+  props.themeId(buttonId)
  }
 
   return (
@@ -18,22 +19,22 @@ export const Theme = () => {
             <div>2</div>
             <div>3</div>
           </div>
-          <div className="bg-th1-toggle flex flex-row rounded-lg space-x-2 mx-1 p-1">
+          <div className="bg-skin-display-background  flex flex-row rounded-lg space-x-2 mx-1 p-1">
             <button
               className={`rounded-full w-3 h-3 ${
-                activeButton === 1 ? "bg-red-400" : ""
+                activeButton === 1 ? "bg-skin-button-color-equal " : ""
               }`}
               onClick={() =>handleButtonClick(1)}
             ></button>
             <button
               className={`rounded-full w-3 h-3 ${
-                activeButton === 2 ? "bg-red-400" : ""
+                activeButton === 2 ? "bg-skin-button-color-equal" : ""
               }`}
               onClick={() =>handleButtonClick(2)}
             ></button>
             <button
               className={`rounded-full w-3 h-3 ${
-                activeButton === 3 ? "bg-red-400" : ""
+                activeButton === 3 ? "bg-skin-button-color-equal" : ""
               }`}
               onClick={() =>handleButtonClick(3)}
             ></button>

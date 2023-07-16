@@ -57,3 +57,44 @@
     background-color: hsla(268, 71%, 12%, var(--tw-bg-opacity));
   }
 }
+
+@layer base{
+  :root {
+    --bg-color-main : #c7d2fe;
+    --bg-color-border : #b4a296;
+    --color-text-base : #000000;
+  }
+  .theme-first {
+    --bg-color-main : #3b4664;
+    --bg-color-display : #181f32;
+    --bg-color-keypad : #252d44;
+    --bg-color-button : #eae3db;
+    --bg-color-button-equal : #f96c5b;
+    --bg-color-button-hover : #ffffff;
+    --bg-color-border : #b4a296;
+    --bg-color-border-hover : #a6978b;
+    --color-text-base : #000000;
+  }
+  .theme-second {
+    --bg-color-main : #e6e6e6;
+    --bg-color-display : #eeeeee;
+    --bg-color-keypad : #d3cdcd;
+    --bg-color-button : #e5e4e0;
+    --bg-color-button-equal : #ff8b38;
+    --bg-color-button-hover : #ffffff;
+    --bg-color-border : #a69c90;
+    --bg-color-border-hover : #a6978b;
+    --color-text-base : #000000;
+  }
+  .theme-third {
+    --bg-color-main : #17062a;
+    --bg-color-display : #1e0836;
+    --bg-color-keypad : #1e0836;
+    --bg-color-button : #331b4d;
+    --bg-color-button-equal : #94fff9;
+    --bg-color-button-hover : #8631b0;
+    --bg-color-border : #7c2392;
+    --bg-color-border-hover : #c115f7;
+    --color-text-base : #ffea31;
+  }
+}

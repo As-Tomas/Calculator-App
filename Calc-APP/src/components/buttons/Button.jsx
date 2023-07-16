@@ -7,8 +7,8 @@ export const Button = (props) => {
       };
     
   return (
-    <div className=" text-[26px] rounded-lg  text-center border-b-4 
-    bg-th1-button border-th1-button hover:bg-th1-button-hover hover:border-th1-button-hover "
+    <div className=" text-[26px] rounded-lg  text-center text-skin-base border-b-4 
+     bg-skin-button-color border-skin-border-color  hover:bg-skin-button-color-hover hover:border-skin-border-color-hover "
     onClick={handleClick} >
         {props.name}
     </div>

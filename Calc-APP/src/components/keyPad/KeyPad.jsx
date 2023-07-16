@@ -1,7 +1,7 @@
 import { Button } from "../buttons/Button";
 
 export const KeyPad = (props) => {
-    const background = props.background ? props.background : 'bg-th1-toggle';
+    //const background = props.background ? props.background : 'bg-th1-toggle';
 
     const handleClick = (keyId) => {
         // Pass the key ID to the parent component
@@ -9,7 +9,7 @@ export const KeyPad = (props) => {
       };
 
   return (
-    <div className={`${background} grid grid-cols-4 grid-rows-5 gap-4 p-6 rounded-lg`}>
+    <div className=" bg-skin-keypad-background grid grid-cols-4 grid-rows-5 gap-4 p-6 rounded-lg">
       <Button key={1} name="7" onClick={() => handleClick(7)}/>
       <Button key={2} name="8" onClick={() => handleClick(8)}/>
       <Button key={3} name="9" onClick={() => handleClick(9)}/>
