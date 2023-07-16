@@ -30,8 +30,8 @@ function App() {
     <>
     <div className={`${theme}`}>
 
-      <div className="bg-skin-main-background   w-screen h-screen  ">
-        <div className=" mx-auto font-League Spartan font-bold  sm:w-[375px] md:w-[490px]">
+      <div className="bg-skin-main-background   w-screen h-screen flex items-center ">
+        <div className=" mx-auto font-League Spartan font-bold w-[300px] md:w-[375px]">
           <Theme themeId={handleThemeSelection}/>
           <Display result={count.toString()} />
           <KeyPad onKeyClick={handleKeyClick} />

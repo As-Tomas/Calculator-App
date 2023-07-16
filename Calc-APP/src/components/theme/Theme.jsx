@@ -10,7 +10,7 @@ export const Theme = (props) => {
   return (
     <div className="flex flex-row justify-between text-skin-text-color-upper text-[22px]">
       <h1>calc</h1>
-      <div className="flex items-end text-[10px]">
+      <div className="flex items-end text-[10px] ">
         <div className="mr-3">THEME</div>
         <div className="flex flex-col">
           <div className="flex flex-row space-x-4 px-2">

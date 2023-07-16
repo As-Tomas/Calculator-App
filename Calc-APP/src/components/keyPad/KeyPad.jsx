@@ -7,7 +7,7 @@ export const KeyPad = (props) => {
       };
 
   return (
-    <div className=" bg-skin-keypad-background grid grid-cols-4 grid-rows-5 gap-4 p-6 rounded-lg">
+    <div className=" bg-skin-keypad-background grid grid-cols-4 grid-rows-5 gap-3 md:gap-4 p-6 rounded-lg">
       <Button key={1} name="7" onClick={() => handleClick(7)}/>
       <Button key={2} name="8" onClick={() => handleClick(8)}/>
       <Button key={3} name="9" onClick={() => handleClick(9)}/>
