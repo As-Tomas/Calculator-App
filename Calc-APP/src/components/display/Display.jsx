@@ -1,8 +1,16 @@
 
+import PropTypes from 'prop-types';
 
-export const Display = () => {
+const Display = (props) => {
   return (
-    <div className=" bg-th1-screen px-6 py-6 text-end mx-auto my-4 text-white rounded-lg">
-      399,985</div>
-  )
-}
+    <div className="bg-th1-screen px-6 py-6 m-6 text-end mx-auto text-white rounded-lg">
+      {props.result}
+    </div>
+  );
+};
+
+Display.propTypes = {
+  result: PropTypes.string.isRequired,
+};
+
+export { Display }; 
