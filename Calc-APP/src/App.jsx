@@ -12,7 +12,6 @@ function App() {
   const handleKeyClick = (keyId) => {
     const newResult = performCalculation(keyId, count);
     setCount(newResult);
-    console.log('Clicked key ID:', keyId);
   };
 
   const [theme, setTheme] = useState("theme-first");
@@ -25,7 +24,6 @@ function App() {
   } else if (themeId === 3) {
     setTheme("theme-third");
   } 
-    console.log('Clicked key ID:', themeId);
   }
 
   return (
