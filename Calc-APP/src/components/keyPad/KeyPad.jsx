@@ -1,10 +1,8 @@
 import { Button } from "../buttons/Button";
 
 export const KeyPad = (props) => {
-    //const background = props.background ? props.background : 'bg-th1-toggle';
 
     const handleClick = (keyId) => {
-        // Pass the key ID to the parent component
         props.onKeyClick(keyId);
       };
 

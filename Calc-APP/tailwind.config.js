@@ -5,6 +5,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'League Spartan': ['League Spartan', 'sans-serif'],
+      },
       textColor: {
         skin: {
           'text-color-keypad' : 'var(--color-text-keypad)',

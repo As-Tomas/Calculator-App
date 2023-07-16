@@ -5,6 +5,7 @@ import { Display } from "./components/display/Display";
 import { KeyPad } from "./components/keyPad/KeyPad";
 import { performCalculation } from "./components/logic/Logic";
 
+
 function App() {
   const [count, setCount] = useState(0);
 
@@ -32,7 +33,7 @@ function App() {
     <div className={`${theme}`}>
 
       <div className="bg-skin-main-background   w-screen h-screen  ">
-        <div className=" mx-auto  font-bold  sm:w-[375px] md:w-[490px]">
+        <div className=" mx-auto font-League Spartan font-bold  sm:w-[375px] md:w-[490px]">
           <Theme themeId={handleThemeSelection}/>
           <Display result={count.toString()} />
           <KeyPad onKeyClick={handleKeyClick} />

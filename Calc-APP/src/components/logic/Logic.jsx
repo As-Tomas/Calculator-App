@@ -8,11 +8,9 @@ export const performCalculation = (keyId, currentValue) => {
       return equation === "0" ? equation : currentValue.slice(0, -1); 
     case "=":
       try {
-        // Use a custom evaluation function to handle numbers with decimal places
         const result = evaluateExpression(currentValue);
         return result.toString();
       } catch (error) {
-        // Handle error if the expression is invalid
         return "Error";
       }
     default:      
@@ -21,7 +19,6 @@ export const performCalculation = (keyId, currentValue) => {
 };
 
 const evaluateExpression = (expression) => {
-  // Replace the comma (,) with a dot (.) for decimal places
   const evaluatedExpression = expression.replace(/,/g, ".");
 
   const result = eval(evaluatedExpression);
